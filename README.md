@@ -52,10 +52,10 @@ cd /Users/dasky/PycharmProjects/NNUI2/EXP06 && python3 run_experiment.py
 ## Testy
 
 ```bash
-cd /Users/dasky/PycharmProjects/NNUI2/EXP03 && pytest -q
-cd /Users/dasky/PycharmProjects/NNUI2/EXP04 && pytest -q
-cd /Users/dasky/PycharmProjects/NNUI2/EXP05 && pytest -q
-cd /Users/dasky/PycharmProjects/NNUI2/EXP06 && pytest -q
+cd /NNUI2/EXP03 && pytest -q
+cd /NNUI2/EXP04 && pytest -q
+cd /NNUI2/EXP05 && pytest -q
+cd /NNUI2/EXP06 && pytest -q
 ```
 
 ## Kde jsou reporty
