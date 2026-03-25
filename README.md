@@ -42,11 +42,11 @@ Repozitář obsahuje finální vypracování cvičení 02–06 pro předmět NNU
 ## Spuštění experimentů
 
 ```bash
-cd /Users/dasky/PycharmProjects/NNUI2/EXP02/experiment_02 && python3 main.py
-cd /Users/dasky/PycharmProjects/NNUI2/EXP03 && python3 -m scripts.run_experiments --out report/assets --seed 42
-cd /Users/dasky/PycharmProjects/NNUI2/EXP04 && python3 run_experiment.py
-cd /Users/dasky/PycharmProjects/NNUI2/EXP05 && python3 run_experiment.py
-cd /Users/dasky/PycharmProjects/NNUI2/EXP06 && python3 run_experiment.py
+cd /NNUI2/EXP02/experiment_02 && python3 main.py
+cd /NNUI2/EXP03 && python3 -m scripts.run_experiments --out report/assets --seed 42
+cd /NNUI2/EXP04 && python3 run_experiment.py
+cd /NNUI2/EXP05 && python3 run_experiment.py
+cd /NNUI2/EXP06 && python3 run_experiment.py
 ```
 
 ## Testy
