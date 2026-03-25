@@ -1,0 +1,54 @@
+{
+  "toy": {
+    "histories": {
+      "radius=0": {
+        "final_quantization_error": 1.2419598939428669
+      },
+      "radius=1": {
+        "final_quantization_error": 1.2795021791271322
+      },
+      "radius=2": {
+        "final_quantization_error": 1.8740532985181668
+      }
+    }
+  },
+  "iris": {
+    "class_names": [
+      "setosa",
+      "versicolor",
+      "virginica"
+    ],
+    "scenarios": {
+      "exact_shape": {
+        "config": {
+          "n_units": 3,
+          "lr": 0.5,
+          "radius": 1,
+          "epochs": 160
+        },
+        "final_quantization_error": 0.9058285672310254,
+        "purity": 0.8466666666666667
+      },
+      "insufficient_shape": {
+        "config": {
+          "n_units": 2,
+          "lr": 0.5,
+          "radius": 1,
+          "epochs": 160
+        },
+        "final_quantization_error": 1.079819622131841,
+        "purity": 0.6666666666666666
+      },
+      "redundant_shape": {
+        "config": {
+          "n_units": 6,
+          "lr": 0.5,
+          "radius": 2,
+          "epochs": 160
+        },
+        "final_quantization_error": 0.7480825455860233,
+        "purity": 0.84
+      }
+    }
+  }
+}
