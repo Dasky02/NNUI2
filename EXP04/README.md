@@ -17,7 +17,7 @@ python3 run_experiment.py
 
 ## Výstupy
 
-- `outputs/results.json`
-- `report/assets/*.png`
-- `report/report.md`
+- `EXP04/outputs/results.json`
+- `EXP04/report/assets/*.png`
+- `EXP04/report/report.md`
 

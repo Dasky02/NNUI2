@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "dataset_name": "Bricks Detection Dataset",
+  "doi": "10.5281/zenodo.18952529",
+  "source": "https://zenodo.org/records/18952529",
+  "used_part": "OBB",
+  "yaml_path": "/Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/data_all.yaml",
+  "nc": 3,
+  "names": {
+    "0": "InvalidBrick",
+    "1": "Pallete",
+    "2": "Brick"
+  },
+  "train_images_path": "/Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/dataset_all/images/train",
+  "val_images_path": "/Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/dataset_all/images/val",
+  "test_images_path": "/Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/dataset_all/images/test",
+  "train_labels_path": "/Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/dataset_all/labels/train",
+  "val_labels_path": "/Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/dataset_all/labels/val",
+  "test_labels_path": "/Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/dataset_all/labels/test",
+  "train_images": 83,
+  "val_images": 20,
+  "test_images": 30,
+  "train_labels": 83,
+  "val_labels": 20,
+  "test_labels": 30,
+  "label_checks": {
+    "train": {
+      "exists": true,
+      "checked_files": 83,
+      "non_empty_rows": 5380,
+      "obb_like": true,
+      "bad_examples": []
+    },
+    "val": {
+      "exists": true,
+      "checked_files": 20,
+      "non_empty_rows": 1271,
+      "obb_like": true,
+      "bad_examples": []
+    },
+    "test": {
+      "exists": true,
+      "checked_files": 30,
+      "non_empty_rows": 2049,
+      "obb_like": true,
+      "bad_examples": []
+    }
+  },
+  "labels_have_9_values": true,
+  "reason": null
+}

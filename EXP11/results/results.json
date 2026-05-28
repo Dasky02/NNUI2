@@ -1,0 +1,103 @@
+{
+  "status": "PASS_WITH_LIMITATIONS",
+  "dataset": {
+    "path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg",
+    "yaml_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/data.yaml",
+    "exists": true,
+    "has_data_yaml": true,
+    "has_images": true,
+    "has_masks_or_annotations": true,
+    "annotation_format": "YOLO segmentation polygon labels",
+    "splits": {
+      "train": {
+        "images_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/train/images",
+        "labels_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/train/labels",
+        "images": 267,
+        "labels": 267,
+        "paired_samples": 267,
+        "checked_labels": 20,
+        "checked_labels_with_polygons": 20
+      },
+      "valid": {
+        "images_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/valid/images",
+        "labels_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/valid/labels",
+        "images": 24,
+        "labels": 24,
+        "paired_samples": 24,
+        "checked_labels": 20,
+        "checked_labels_with_polygons": 20
+      },
+      "test": {
+        "images_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/test/images",
+        "labels_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/test/labels",
+        "images": 9,
+        "labels": 9,
+        "paired_samples": 9,
+        "checked_labels": 9,
+        "checked_labels_with_polygons": 8
+      }
+    },
+    "nc": 1,
+    "names": [
+      "potatoes-"
+    ],
+    "status": "OK",
+    "reason": "Potatoes_seg contains train/valid/test images and YOLO polygon segmentation annotations.",
+    "yaml": {
+      "train": "../train/images",
+      "val": "../valid/images",
+      "test": "../test/images",
+      "nc": 1,
+      "names": [
+        "potatoes-"
+      ],
+      "roboflow": {
+        "workspace": "potatoes-y0p1f",
+        "project": "potatoes-segmentation",
+        "version": 9,
+        "license": "CC BY 4.0",
+        "url": "https://universe.roboflow.com/potatoes-y0p1f/potatoes-segmentation/dataset/9"
+      }
+    },
+    "total_images": 300,
+    "total_labels": 300
+  },
+  "segmentace_txt": {
+    "path": "/Users/dasky/PycharmProjects/cviceni/segmentace.txt",
+    "exists": true,
+    "used_as": "YOLO26-seg instruction/source material; local smoke run uses the same data.yaml and segmentation labels."
+  },
+  "model": "TinySegNet",
+  "training": {
+    "epochs": 2,
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "train_limit": 64,
+    "val_limit": 16,
+    "device": "cpu"
+  },
+  "history": [
+    {
+      "epoch": 1.0,
+      "train_loss": 0.6331920549273491,
+      "val_loss": 0.5916430652141571,
+      "val_pixel_accuracy": 0.8405189514160156,
+      "val_iou": 0.0,
+      "val_dice": 0.0
+    },
+    {
+      "epoch": 2.0,
+      "train_loss": 0.5859072208404541,
+      "val_loss": 0.4655728191137314,
+      "val_pixel_accuracy": 0.8405189514160156,
+      "val_iou": 0.0,
+      "val_dice": 0.0
+    }
+  ],
+  "test_metrics": {
+    "loss": 0.45778788626194,
+    "pixel_accuracy": 0.8358345031738281,
+    "iou": 0.0,
+    "dice": 0.0
+  }
+}

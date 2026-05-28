@@ -1,0 +1,36 @@
+{
+  "status": "invalid",
+  "yaml_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/data.yaml",
+  "nc": 1,
+  "names": [
+    "potatoes-"
+  ],
+  "train_images_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/train/images",
+  "val_images_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/valid/images",
+  "test_images_path": "/Users/dasky/PycharmProjects/cviceni/Potatoes_seg/test/images",
+  "train_images": 267,
+  "val_images": 24,
+  "test_images": 9,
+  "label_checks": {
+    "train": {
+      "exists": true,
+      "checked_files": 50,
+      "segmentation_like": true,
+      "bad_examples": []
+    },
+    "val": {
+      "exists": true,
+      "checked_files": 24,
+      "segmentation_like": true,
+      "bad_examples": []
+    },
+    "test": {
+      "exists": true,
+      "checked_files": 9,
+      "segmentation_like": true,
+      "bad_examples": []
+    }
+  },
+  "looks_like_bricks_topbricks": false,
+  "reason": "dataset metadata/path does not look like Bricks Detection Dataset TopBricks"
+}

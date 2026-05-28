@@ -1,0 +1,47 @@
+{
+  "status": "blocked",
+  "reason": "training not requested; use --run after providing the Bricks segmentation dataset",
+  "data_path": null,
+  "variants": [
+    {
+      "name": "yolo26n_seg_img80",
+      "model": "yolo26n-seg.pt",
+      "imgsz": 80,
+      "epochs": 20,
+      "batch": 8,
+      "augment": false
+    },
+    {
+      "name": "yolo26n_seg_img320",
+      "model": "yolo26n-seg.pt",
+      "imgsz": 320,
+      "epochs": 20,
+      "batch": 8,
+      "augment": false
+    },
+    {
+      "name": "yolo26s_seg_img80",
+      "model": "yolo26s-seg.pt",
+      "imgsz": 80,
+      "epochs": 20,
+      "batch": 8,
+      "augment": false
+    },
+    {
+      "name": "yolo26s_seg_img320",
+      "model": "yolo26s-seg.pt",
+      "imgsz": 320,
+      "epochs": 20,
+      "batch": 8,
+      "augment": false
+    },
+    {
+      "name": "yolo26n_seg_img320_aug",
+      "model": "yolo26n-seg.pt",
+      "imgsz": 320,
+      "epochs": 40,
+      "batch": 8,
+      "augment": true
+    }
+  ]
+}

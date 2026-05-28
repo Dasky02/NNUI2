@@ -1,0 +1,42 @@
+{
+  "status": "blocked",
+  "reason": "training not requested; use --run after providing the Bricks OBB dataset",
+  "data_path": null,
+  "variants": [
+    {
+      "name": "yolo26n_obb_img80",
+      "model": "yolo26n-obb.pt",
+      "imgsz": 80,
+      "epochs": 20,
+      "batch": 8
+    },
+    {
+      "name": "yolo26n_obb_img240",
+      "model": "yolo26n-obb.pt",
+      "imgsz": 240,
+      "epochs": 20,
+      "batch": 8
+    },
+    {
+      "name": "yolo26s_obb_img80",
+      "model": "yolo26s-obb.pt",
+      "imgsz": 80,
+      "epochs": 20,
+      "batch": 8
+    },
+    {
+      "name": "yolo26s_obb_img240",
+      "model": "yolo26s-obb.pt",
+      "imgsz": 240,
+      "epochs": 20,
+      "batch": 8
+    },
+    {
+      "name": "yolo26n_obb_img240_epochs40",
+      "model": "yolo26n-obb.pt",
+      "imgsz": 240,
+      "epochs": 40,
+      "batch": 8
+    }
+  ]
+}

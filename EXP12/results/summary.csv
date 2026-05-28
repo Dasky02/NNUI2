@@ -1,0 +1,6 @@
+variant,status,temperature,top_p,top_k,repeat_penalty,num_ctx,response_length_chars,response_length_words,wall_time_s,ollama_total_duration_s,eval_count,tokens_per_second,subjective_quality,repetition,creativity,consistency,error
+V1,completed,0.2,0.9,40,1.1,2048,1913,309,15.359,15.303,671,62.4,slabsi - chybi cast klicovych pojmu,opak,nevyhodnoceno,nizka,
+V2,completed,0.8,0.9,40,1.1,2048,2084,307,12.463,12.425,751,64.09,"pouzitelna - obsahuje hlavni pojmy, ale je strucnejsi",opak,stredni,stredni,
+V3,completed,1.2,1.0,100,1.05,2048,2131,338,12.603,12.564,742,62.93,"pouzitelna - obsahuje hlavni pojmy, ale je strucnejsi",opak,stredni,stredni,
+V4,completed,0.2,0.8,20,1.2,2048,2182,303,11.516,11.475,721,66.05,"pouzitelna - obsahuje hlavni pojmy, ale je strucnejsi",opak,stredni,stredni,
+V5,completed,0.7,0.95,80,1.1,8192,2364,340,14.162,14.148,769,64.97,"pouzitelna - obsahuje hlavni pojmy, ale je strucnejsi",opak,stredni,stredni,

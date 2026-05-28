@@ -1,0 +1,65 @@
+{
+  "framework": "pytorch",
+  "rows": [
+    {
+      "kernel_size": 1,
+      "val_accuracy": 0.8611111111111112,
+      "accuracy": 0.8472222222222222,
+      "precision_macro": 0.8513141032955275,
+      "recall_macro": 0.8468618618618619,
+      "f1_macro": 0.8479440949901308,
+      "train_loss_final": 0.3794806559769888,
+      "epochs": 31
+    },
+    {
+      "kernel_size": 2,
+      "val_accuracy": 0.9583333333333334,
+      "accuracy": 0.9583333333333334,
+      "precision_macro": 0.9604303010460329,
+      "recall_macro": 0.9578528528528529,
+      "f1_macro": 0.9575862034423677,
+      "train_loss_final": 0.0527057734939824,
+      "epochs": 33
+    },
+    {
+      "kernel_size": 3,
+      "val_accuracy": 0.9777777777777777,
+      "accuracy": 0.9666666666666667,
+      "precision_macro": 0.9666545150755678,
+      "recall_macro": 0.9663492063492065,
+      "f1_macro": 0.966245201290769,
+      "train_loss_final": 0.014697711056957892,
+      "epochs": 32
+    },
+    {
+      "kernel_size": 5,
+      "val_accuracy": 0.975,
+      "accuracy": 0.9722222222222222,
+      "precision_macro": 0.9742773892773894,
+      "recall_macro": 0.9721428571428572,
+      "f1_macro": 0.9722555623596654,
+      "train_loss_final": 0.004093086715362198,
+      "epochs": 45
+    },
+    {
+      "kernel_size": 7,
+      "val_accuracy": 0.975,
+      "accuracy": 0.9583333333333334,
+      "precision_macro": 0.9626839150804034,
+      "recall_macro": 0.9576984126984127,
+      "f1_macro": 0.9581553168133541,
+      "train_loss_final": 0.021495525103439418,
+      "epochs": 28
+    }
+  ],
+  "best": {
+    "kernel_size": 5,
+    "val_accuracy": 0.975,
+    "accuracy": 0.9722222222222222,
+    "precision_macro": 0.9742773892773894,
+    "recall_macro": 0.9721428571428572,
+    "f1_macro": 0.9722555623596654,
+    "train_loss_final": 0.004093086715362198,
+    "epochs": 45
+  }
+}

@@ -17,12 +17,12 @@ python3 main.py
 
 ## Výstupy
 
-- `outputs/weights_run_*.npy`
-- `outputs/errors_run_*.npy`
-- `outputs/best_model_weights.npy`
-- `outputs/run_summary.csv`
-- `outputs/metrics.json`
-- `report/assets/training_error_runs.png`
-- `report/assets/final_error_boxplot.png`
-- `report/assets/confusion_matrix.png`
-- `report/report.md`
+- `EXP02/experiment_02/outputs/weights_run_*.npy`
+- `EXP02/experiment_02/outputs/errors_run_*.npy`
+- `EXP02/experiment_02/outputs/best_model_weights.npy`
+- `EXP02/experiment_02/outputs/run_summary.csv`
+- `EXP02/experiment_02/outputs/metrics.json`
+- `EXP02/experiment_02/report/assets/training_error_runs.png`
+- `EXP02/experiment_02/report/assets/final_error_boxplot.png`
+- `EXP02/experiment_02/report/assets/confusion_matrix.png`
+- `EXP02/experiment_02/report/report.md`

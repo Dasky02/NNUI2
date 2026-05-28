@@ -1,0 +1,94 @@
+{
+  "framework": "pytorch",
+  "dataset": {
+    "name": "sklearn.datasets.load_digits",
+    "classes": 10,
+    "images": 1797,
+    "image_size": "1x8x8 grayscale",
+    "train_samples": 1077,
+    "validation_samples": 360,
+    "test_samples": 360,
+    "split": "60/20/20 stratified",
+    "preprocessing": "pixel values scaled from 0-16 to 0-1; channel dimension added"
+  },
+  "rows": [
+    {
+      "kernel_size": 1,
+      "padding": 0,
+      "filters": 8,
+      "seed": 8081,
+      "val_accuracy": 0.8722222222222222,
+      "accuracy": 0.8555555555555555,
+      "precision_macro": 0.8569910819231701,
+      "recall_macro": 0.855032175032175,
+      "f1_macro": 0.8518590956147005,
+      "test_loss": 0.3983933627605438,
+      "epochs": 47
+    },
+    {
+      "kernel_size": 3,
+      "padding": 1,
+      "filters": 8,
+      "seed": 8083,
+      "val_accuracy": 0.9805555555555555,
+      "accuracy": 0.9777777777777777,
+      "precision_macro": 0.978169452347084,
+      "recall_macro": 0.9775353925353926,
+      "f1_macro": 0.9774651979061574,
+      "test_loss": 0.07917489111423492,
+      "epochs": 37
+    },
+    {
+      "kernel_size": 5,
+      "padding": 2,
+      "filters": 8,
+      "seed": 8085,
+      "val_accuracy": 0.9777777777777777,
+      "accuracy": 0.9638888888888889,
+      "precision_macro": 0.9650185234395762,
+      "recall_macro": 0.9636465036465036,
+      "f1_macro": 0.9636910067529627,
+      "test_loss": 0.11853402107954025,
+      "epochs": 41
+    },
+    {
+      "kernel_size": 7,
+      "padding": 3,
+      "filters": 8,
+      "seed": 8087,
+      "val_accuracy": 0.975,
+      "accuracy": 0.9638888888888889,
+      "precision_macro": 0.965828568953569,
+      "recall_macro": 0.9636465036465036,
+      "f1_macro": 0.9638005810861057,
+      "test_loss": 0.11180993914604187,
+      "epochs": 26
+    },
+    {
+      "kernel_size": 9,
+      "padding": 4,
+      "filters": 8,
+      "seed": 8089,
+      "val_accuracy": 0.9888888888888889,
+      "accuracy": 0.975,
+      "precision_macro": 0.9756496467022784,
+      "recall_macro": 0.9746825396825397,
+      "f1_macro": 0.9746449253779496,
+      "test_loss": 0.08808498084545135,
+      "epochs": 65
+    }
+  ],
+  "best": {
+    "kernel_size": 3,
+    "padding": 1,
+    "filters": 8,
+    "seed": 8083,
+    "val_accuracy": 0.9805555555555555,
+    "accuracy": 0.9777777777777777,
+    "precision_macro": 0.978169452347084,
+    "recall_macro": 0.9775353925353926,
+    "f1_macro": 0.9774651979061574,
+    "test_loss": 0.07917489111423492,
+    "epochs": 37
+  }
+}

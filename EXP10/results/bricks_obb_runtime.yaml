@@ -1,0 +1,8 @@
+path: /Users/dasky/PycharmProjects/cviceni/datasets/Bricks_Detection_Dataset/OBB/dataset_all
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: InvalidBrick
+  1: Pallete
+  2: Brick

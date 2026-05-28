@@ -1,0 +1,355 @@
+{
+  "framework": "pytorch",
+  "status": "PASS_WITH_LIMITATIONS",
+  "dataset": {
+    "name": "Local flower classification dataset",
+    "path": "/Users/dasky/PycharmProjects/cviceni/dataset",
+    "classes": 5,
+    "class_names": [
+      "daisy",
+      "dandelion",
+      "rose",
+      "sunflower",
+      "tulip"
+    ],
+    "class_counts": {
+      "daisy": 501,
+      "dandelion": 646,
+      "rose": 497,
+      "sunflower": 495,
+      "tulip": 607,
+      "_skipped_unreadable": 0
+    },
+    "images": 2746,
+    "image_size": "3x64x64 RGB",
+    "train_samples": 1647,
+    "validation_samples": 549,
+    "test_samples": 550,
+    "split": "60/20/20 stratified",
+    "preprocessing": "RGB conversion, resize to 64x64, pixel scaling to 0-1, channel-wise normalization using train split mean/std",
+    "normalization_mean": [
+      0.4612419903278351,
+      0.4210659861564636,
+      0.3015269935131073
+    ],
+    "normalization_std": [
+      0.28321999311447144,
+      0.2517099976539612,
+      0.2760910093784332
+    ]
+  },
+  "architectures": [
+    {
+      "name": "A1_conv1_pool_fc",
+      "channels": [
+        8
+      ],
+      "kernel_sizes": [
+        3
+      ],
+      "pool_after": [
+        0
+      ],
+      "dropout": 0.0,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "description": "1x Conv + Pool + FC"
+    },
+    {
+      "name": "A2_conv2_pool_fc",
+      "channels": [
+        8,
+        16
+      ],
+      "kernel_sizes": [
+        3,
+        3
+      ],
+      "pool_after": [
+        1
+      ],
+      "dropout": 0.0,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "description": "2x Conv + Pool + FC"
+    },
+    {
+      "name": "A3_conv3_pool_fc",
+      "channels": [
+        8,
+        16,
+        16
+      ],
+      "kernel_sizes": [
+        3,
+        3,
+        3
+      ],
+      "pool_after": [
+        1
+      ],
+      "dropout": 0.0,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "description": "3x Conv + Pool + FC"
+    },
+    {
+      "name": "A4_conv2_dropout_fc",
+      "channels": [
+        8,
+        16
+      ],
+      "kernel_sizes": [
+        3,
+        3
+      ],
+      "pool_after": [
+        1
+      ],
+      "dropout": 0.25,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "description": "2x Conv + Dropout + FC"
+    },
+    {
+      "name": "A5_conv3_dropout_bigfc_tanh",
+      "channels": [
+        8,
+        16,
+        24
+      ],
+      "kernel_sizes": [
+        3,
+        3,
+        3
+      ],
+      "pool_after": [
+        1
+      ],
+      "dropout": 0.3,
+      "activation": "tanh",
+      "fc_hidden": 96,
+      "description": "3x Conv + Dropout + vetsi FC"
+    }
+  ],
+  "rows": [
+    {
+      "architecture": "A1_conv1_pool_fc",
+      "description": "1x Conv + Pool + FC",
+      "conv_layers": 1,
+      "filters": "8",
+      "kernel_sizes": "3",
+      "pool_after": "[0]",
+      "dropout": 0.0,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "seed": 9091,
+      "val_accuracy": 0.5883424408014571,
+      "accuracy": 0.5836363636363636,
+      "precision_macro": 0.5920792241735178,
+      "recall_macro": 0.584174724754214,
+      "f1_macro": 0.5789241553650857,
+      "test_loss": 1.0828322172164917,
+      "epochs": 8
+    },
+    {
+      "architecture": "A2_conv2_pool_fc",
+      "description": "2x Conv + Pool + FC",
+      "conv_layers": 2,
+      "filters": "8-16",
+      "kernel_sizes": "3-3",
+      "pool_after": "[1]",
+      "dropout": 0.0,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "seed": 9092,
+      "val_accuracy": 0.5883424408014571,
+      "accuracy": 0.5636363636363636,
+      "precision_macro": 0.5907855611880379,
+      "recall_macro": 0.5585923127577722,
+      "f1_macro": 0.5513523986669766,
+      "test_loss": 1.1025980710983276,
+      "epochs": 7
+    },
+    {
+      "architecture": "A3_conv3_pool_fc",
+      "description": "3x Conv + Pool + FC",
+      "conv_layers": 3,
+      "filters": "8-16-16",
+      "kernel_sizes": "3-3-3",
+      "pool_after": "[1]",
+      "dropout": 0.0,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "seed": 9093,
+      "val_accuracy": 0.604735883424408,
+      "accuracy": 0.5472727272727272,
+      "precision_macro": 0.565049886533435,
+      "recall_macro": 0.5459677599479353,
+      "f1_macro": 0.5478792446092826,
+      "test_loss": 1.1161619424819946,
+      "epochs": 6
+    },
+    {
+      "architecture": "A4_conv2_dropout_fc",
+      "description": "2x Conv + Dropout + FC",
+      "conv_layers": 2,
+      "filters": "8-16",
+      "kernel_sizes": "3-3",
+      "pool_after": "[1]",
+      "dropout": 0.25,
+      "activation": "relu",
+      "fc_hidden": 48,
+      "seed": 9094,
+      "val_accuracy": 0.6411657559198543,
+      "accuracy": 0.6072727272727273,
+      "precision_macro": 0.6119934503173121,
+      "recall_macro": 0.602131725181668,
+      "f1_macro": 0.5963778746665053,
+      "test_loss": 1.033968448638916,
+      "epochs": 8
+    },
+    {
+      "architecture": "A5_conv3_dropout_bigfc_tanh",
+      "description": "3x Conv + Dropout + vetsi FC",
+      "conv_layers": 3,
+      "filters": "8-16-24",
+      "kernel_sizes": "3-3-3",
+      "pool_after": "[1]",
+      "dropout": 0.3,
+      "activation": "tanh",
+      "fc_hidden": 96,
+      "seed": 9095,
+      "val_accuracy": 0.5537340619307832,
+      "accuracy": 0.49272727272727274,
+      "precision_macro": 0.506437925987226,
+      "recall_macro": 0.4924543952679675,
+      "f1_macro": 0.48044034177764655,
+      "test_loss": 1.319582462310791,
+      "epochs": 7
+    }
+  ],
+  "best": {
+    "architecture": "A4_conv2_dropout_fc",
+    "description": "2x Conv + Dropout + FC",
+    "conv_layers": 2,
+    "filters": "8-16",
+    "kernel_sizes": "3-3",
+    "pool_after": "[1]",
+    "dropout": 0.25,
+    "activation": "relu",
+    "fc_hidden": 48,
+    "seed": 9094,
+    "val_accuracy": 0.6411657559198543,
+    "accuracy": 0.6072727272727273,
+    "precision_macro": 0.6119934503173121,
+    "recall_macro": 0.602131725181668,
+    "f1_macro": 0.5963778746665053,
+    "test_loss": 1.033968448638916,
+    "epochs": 8
+  },
+  "curves": {
+    "A1_conv1_pool_fc": {
+      "train_loss": [
+        1.4740015582453503,
+        1.1630592794221462,
+        1.0088509153291971,
+        0.8924539847017855,
+        0.7746532666154825,
+        0.6853834485095707,
+        0.5614742855810004,
+        0.46476392360188123
+      ],
+      "val_loss": [
+        1.2692440748214722,
+        1.130444049835205,
+        1.1136975288391113,
+        1.0591381788253784,
+        1.0211734771728516,
+        1.063267469406128,
+        1.089758276939392,
+        1.1480454206466675
+      ]
+    },
+    "A2_conv2_pool_fc": {
+      "train_loss": [
+        1.3643731156767827,
+        1.0930096704307004,
+        0.9420342014352697,
+        0.8026687436633639,
+        0.6652485557809771,
+        0.5281533556195845,
+        0.4464340200008735
+      ],
+      "val_loss": [
+        1.1705644130706787,
+        1.070637583732605,
+        1.1297287940979004,
+        1.0628430843353271,
+        1.0770293474197388,
+        1.2710760831832886,
+        1.197860836982727
+      ]
+    },
+    "A3_conv3_pool_fc": {
+      "train_loss": [
+        1.413486377427125,
+        1.1516524129877976,
+        1.0301719443611326,
+        0.8836193008718161,
+        0.803521717868578,
+        0.6622080662139054
+      ],
+      "val_loss": [
+        1.2035794258117676,
+        1.164815068244934,
+        1.0341477394104004,
+        1.045484185218811,
+        1.0329627990722656,
+        1.0956202745437622
+      ]
+    },
+    "A4_conv2_dropout_fc": {
+      "train_loss": [
+        1.3841883656322846,
+        1.1504740098352206,
+        1.0317330830518447,
+        0.9184928730030674,
+        0.8093698154671234,
+        0.7185416007012979,
+        0.6036655413214191,
+        0.5152524860613116
+      ],
+      "val_loss": [
+        1.1472898721694946,
+        1.0419727563858032,
+        0.9739301204681396,
+        0.9773266911506653,
+        0.9264304637908936,
+        0.9899487495422363,
+        0.9873647093772888,
+        1.0340723991394043
+      ]
+    },
+    "A5_conv3_dropout_bigfc_tanh": {
+      "train_loss": [
+        1.3803773846275964,
+        1.075191692250674,
+        0.8857845342658691,
+        0.6747422373034263,
+        0.4749050382852699,
+        0.3064048300023939,
+        0.19329613835777595
+      ],
+      "val_loss": [
+        1.18632972240448,
+        1.1229400634765625,
+        1.1466845273971558,
+        1.2187986373901367,
+        1.2852051258087158,
+        1.3592751026153564,
+        1.538284420967102
+      ]
+    }
+  }
+}

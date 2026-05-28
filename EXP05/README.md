@@ -16,8 +16,8 @@ python3 run_experiment.py
 
 ## Výstupy
 
-- `outputs/results.json`
-- `outputs/best_model_weights.npz`
-- `report/assets/*.png`
-- `report/report.md`
+- `EXP05/outputs/results.json`
+- `EXP05/outputs/best_model_weights.npz`
+- `EXP05/report/assets/*.png`
+- `EXP05/report/report.md`
 

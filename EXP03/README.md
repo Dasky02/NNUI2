@@ -61,8 +61,8 @@ python -m scripts.run_experiments --out report/assets --mnist-npz /cesta/k/mnist
 ```
 
 Výstup:
-- obrázky a grafy (`.png`) v `report/assets`
-- report v `report/report.md`
+- obrázky a grafy (`.png`) v `EXP03/report/assets`
+- report v `EXP03/report/report.md`
 
 ## Spuštění testů
 
@@ -90,5 +90,5 @@ Testy ověřují:
 
 Report je generován automaticky skriptem a obsahuje:
 - sekce: Cíl, Implementace, Validace podle slajdu (Příklad 1), 3×3 test, MNIST experiment, Zhodnocení
-- vložené obrázky (`![](assets/...)`)
+- vložené obrázky (`![](EXP03/report/assets/...)`)
 - tabulku výsledků MNIST recallu (nebo placeholder, pokud dataset není dostupný)
